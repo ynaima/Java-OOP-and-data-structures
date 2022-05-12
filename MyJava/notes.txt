@@ -1,0 +1,81 @@
+Java uses a two step process
+Java comes with the Java Development Kit(JDK) whic uses java c for
+writing java programs which contains a complier JRE(Java running time Environment) that
+contains a complier(Java Virtual Machine) for executing java programs.
+
+
+first.java(sourcecode) ->using javac(in JDK)-> first.class
+(the result from the compiler)-> the we run first.class-> java first(using jvm) -> 
+native code(human unreadable code)
+
+
+we run hello world first program code from the command line steps will be attached
+we use dir - to check directory
+md - to create a folder from the command line
+cls - to get into the folder we want
+C:\Users\naimo\OneDrive - Wilfrid Laurier University\udemy\MyJava>dir
+ Volume in drive C is Acer
+ Volume Serial Number is F4F6-E296
+
+ Directory of C:\Users\naimo\OneDrive - Wilfrid Laurier University\udemy\MyJava
+
+2022-01-08  11:16 PM    <DIR>          .
+2022-01-08  11:15 PM    <DIR>          ..
+2022-01-08  11:16 PM               208 MyFirst.java
+2022-01-08  11:03 PM               208 MyFirst.txt
+2022-01-08  11:14 PM               649 notes.txt
+               3 File(s)          1,065 bytes
+               2 Dir(s)  164,517,277,696 bytes free
+
+C:\Users\naimo\OneDrive - Wilfrid Laurier University\udemy\MyJava>javac My
+error: Class names, 'My', are only accepted if annotation processing is explicitly requested
+1 error
+
+C:\Users\naimo\OneDrive - Wilfrid Laurier University\udemy\MyJava>javac MyFirst.java
+MyFirst.java:1: error: class, interface, enum, or record expected
+Import java.lang.*;
+^
+1 error
+
+C:\Users\naimo\OneDrive - Wilfrid Laurier University\udemy\MyJava>javac MyFirst.java
+
+C:\Users\naimo\OneDrive - Wilfrid Laurier University\udemy\MyJava>dir
+ Volume in drive C is Acer
+ Volume Serial Number is F4F6-E296
+
+ Directory of C:\Users\naimo\OneDrive - Wilfrid Laurier University\udemy\MyJava
+
+2022-01-08  11:19 PM    <DIR>          .
+2022-01-08  11:15 PM    <DIR>          ..
+2022-01-08  11:19 PM               488 MyFirst.class
+2022-01-08  11:19 PM               208 MyFirst.java
+2022-01-08  11:03 PM               208 MyFirst.txt
+2022-01-08  11:14 PM               649 notes.txt
+               4 File(s)          1,553 bytes
+               2 Dir(s)  164,517,441,536 bytes free
+
+C:\Users\naimo\OneDrive - Wilfrid Laurier University\udemy\MyJava>type MyFirst.java
+import java.lang.*;
+
+
+class MyFirst{
+    public static void main(String args[]){
+         System.out.println("Hello this is my first udemy java program, it is being run from the comand line!");
+    }
+}
+C:\Users\naimo\OneDrive - Wilfrid Laurier University\udemy\MyJava>type MyFirst.class
+╩■║╛<↔
+☻♥♦
+♣♠☺►java/lang/Object☺♠<init>☺♥()V
+
+
+
+☺►java/lang/System☺♥out☺§Ljava/io/PrintStream☺PHello this is my first udemy java program, it is being run from the comand line!
+►◄↕
+‼¶☺‼java/io/PrintStream☺println☺§(Ljava/lang/String;)V▬☺MyFirst☺♦Code☺LineNumberTable☺♦main☺▬([Ljava/lang/String;)V☺
+SourceFile☺
+MyFirst.java §☻☻♣♠☺↨↔☺☺♣*╖☺▒☺↑♠☺♦       ↓
+C:\Users\naimo\OneDrive - Wilfrid Laurier University\udemy\MyJava>java MyFirst
+Hello this is my first udemy java program, it is being run from the comand line!
+
+C:\Users\naimo\OneDrive - Wilfrid Laurier University\udemy\
